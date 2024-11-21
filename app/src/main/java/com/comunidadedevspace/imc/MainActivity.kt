@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -38,6 +39,16 @@ class MainActivity : AppCompatActivity() {
                 val peso: Float = pesostr.toFloat()
                 val altura: Float = alturastr .toFloat()
                 val resultado = peso / (altura * altura)
+                // passar para prox tela
+                // criar layout da prox tela
+                // passar dados (resultado) para prox tela
+
+                //intent
+                val intent= Intent(this, ResultActivity::class.java)
+                intent.putExtra("123", resultado)
+                startActivity(intent)
+
+
                 println(resultado)
             }
 
