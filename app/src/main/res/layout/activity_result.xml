@@ -30,4 +30,10 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         tools:text="NORMAL" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular outro IMC" />
 </LinearLayout>
