@@ -6,34 +6,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".ResultActivity">
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
+
+
+
+
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="23.345"
-        android:maxLength="6"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="363dp" />
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/ic_weight_gris"
+            android:tint="@color/white"/>
+        <TextView
+            android:text="Calculador IMC"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="34sp"/>
+        <TextView
+            android:text="Confirme abaixo o seu resultado e classificação:"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="23.345"
+            android:maxLength="6"
+            android:textSize="58sp"
+            android:textColor="@color/white"
+           android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp"
+             />
+     </LinearLayout>
+
+
+
+
+
+
+
 
     <TextView
         android:id="@+id/tv_classificação_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginTop="90dp"
         android:text="A classificação do seu IMC é:" />
 
     <TextView
         android:id="@+id/tv_classificação"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        tools:text="NORMAL" />
+        tools:text="NORMAL"
+        android:textColor="@color/primary_400"
+        android:textSize="35sp"/>
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular outro IMC" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="350dp"
+        android:text="Calcular outro IMC"
+        />
+
+
+
+
 </LinearLayout>
+
+
+
