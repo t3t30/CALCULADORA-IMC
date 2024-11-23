@@ -1,19 +1,21 @@
 # Calculadora IMC
-Desc
+Aplicativo Android (kotlin) para calculo de Indice de Massa Corporea (IMC)
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+
+<img src="https://github.com/user-attachments/assets/c430f5db-1fe0-49b5-b01b-ee9fac2cbccb" width=260/>
+<img src="https://github.com/user-attachments/assets/ad00691a-50dc-45c0-9b0c-ea946cfe32b2" width=260/>
 
 ## Tecnologias
-Techs
+
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2023 Mateus Dias Bié
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
