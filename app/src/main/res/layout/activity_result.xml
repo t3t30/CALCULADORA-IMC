@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,9 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ResultActivity">
-
-
-
 
 
     <LinearLayout
@@ -30,45 +27,41 @@
             android:layout_height="48dp"
             android:layout_margin="24dp"
             android:src="@drawable/ic_weight_gris"
-            android:tint="@color/white"/>
+            android:tint="@color/white" />
+
         <TextView
-            android:text="Calculador IMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
+            android:text="Calculador IMC"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="34sp"/>
-        <TextView
-            android:text="Confirme abaixo o seu resultado e classificação:"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:text="Confirme abaixo o seu resultado e classificação:"
+            android:textColor="@color/white"
             android:textSize="15sp"
-            android:textColor="@color/white"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="23.345"
-            android:maxLength="6"
-            android:textSize="58sp"
-            android:textColor="@color/white"
-           android:layout_gravity="center"
-            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-             />
-     </LinearLayout>
-
-
-
-
-
-
+            android:layout_marginBottom="24dp"
+            android:maxLength="6"
+            android:textColor="@color/white"
+            android:textSize="58sp"
+            tools:text="23.345" />
+    </LinearLayout>
 
 
     <TextView
@@ -76,19 +69,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:text="A classificação do seu IMC é:"
         android:textSize="15sp"
-        android:layout_marginTop="90dp"
-        android:text="A classificação do seu IMC é:" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_classificação"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vg_header"
+        app:layout_constraintVertical_bias="0.84" />
 
     <TextView
         android:id="@+id/tv_classificação"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        tools:text="NORMAL"
         android:textColor="@color/primary_400"
-        android:textSize="35sp"/>
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vg_header"
+        app:layout_constraintVertical_bias="0.364"
+        tools:text="NORMAL" />
 
 
     <Button
@@ -96,15 +98,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginBottom="12dp"
         android:text="Calcular outro IMC"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</LinearLayout>
 
 
 
