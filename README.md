@@ -9,6 +9,7 @@ Aplicativo Android (kotlin) para calculo de Indice de Massa Corporea (IMC)
 
 ## Tecnologias
 snackbar
+textview
 
 
 
