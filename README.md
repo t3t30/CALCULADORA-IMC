@@ -8,6 +8,7 @@ Aplicativo Android (kotlin) para calculo de Indice de Massa Corporea (IMC)
 <img src="https://github.com/user-attachments/assets/ad00691a-50dc-45c0-9b0c-ea946cfe32b2" width=260/>
 
 ## Tecnologias
+snackbar
 
 
 
