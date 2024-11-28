@@ -11,6 +11,7 @@ Aplicativo Android (kotlin) para calculo de Indice de Massa Corporea (IMC)
 snackbar
 textview
 edit text
+logica do calculo de imc
 
 ## License
 ```
