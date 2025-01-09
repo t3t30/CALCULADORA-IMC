@@ -14,6 +14,8 @@ edit text
 logica do calculo de imc
 user interface
 
+## Em processo de internacionalização (suporte de idioma)
+
 ## License
 ```
 The MIT License (MIT)
